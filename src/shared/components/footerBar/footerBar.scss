@@ -1,0 +1,90 @@
+footer {
+    width: 100%;
+    background-color: var(--darkBlue);
+    overflow: hidden;
+    position: relative;
+    .navFooter {
+        width: 100%;
+        position: relative;
+        .topContainer {
+            display: flex;
+            // justify-content: space-between;
+            height: 6rem;
+            align-items: center;
+            position: relative;
+            max-width: 70rem;
+            padding-right: 5rem;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            padding-left: 5px !important;
+            img {
+                color: var(--white);
+                padding-right: 4rem;
+                height: 23px;
+            }
+        }
+        .links {
+            margin-bottom: -3px;
+            ul {
+                display: flex;
+            }
+            a {
+                display: inline-block;
+                padding: 0.9rem 1.5rem;
+                color: var(--white);
+                font-size: 1.05rem;
+                // text-transform: uppercase;
+                font-weight: 500;
+                line-height: 1;
+                transition: 0.3s;
+                &:hover {
+                    color: var(--softRed);
+                }
+            }
+        }
+        .social-links {
+            right: 0;
+            position: absolute;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+    }
+}
+.social-icon {
+    &:hover {
+        fill: red;
+    }
+    padding-right: 0rem !important;
+}
+@media (max-width: 600px) {
+    .topContainer {
+        display: inline-block !important;
+        height: 100% !important;
+        padding-right: 0rem !important;
+        max-width: 100% !important;
+        text-align: center;
+        width: 100%;
+    }
+    .navFooter {
+        .logo {
+            display: inline-block !important;
+            margin-top: 15px !important;
+            img {
+                height: 26px !important;
+                padding-right: 0rem !important;
+                margin-bottom: 15px !important;
+            }
+        }
+        ul {
+            display: inline-block !important;
+        }
+        .social-links {
+            position: relative !important;
+        }
+    }
+}
+

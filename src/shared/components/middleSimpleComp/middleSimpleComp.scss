@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    z-index: 5;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+.containerSection {
+    .textCentered {
+        text-align: center;
+    }
+    .title {
+        margin-bottom: 1.1rem;
+        position: relative;
+        font-size: 1.7rem;
+    }
+    .text {
+        margin: 0 auto 1.6rem auto;
+        line-height: 25px;
+    }
+}
+.containerPadding {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.containerSmallPadding {
+    padding-top: 1rem;
+    // padding-bottom: 1rem;
+}
+@media (max-width: 1280px) {
+    .containerSection {
+        .text {
+            font-size: 1rem;
+        }
+        .title {
+            font-size: 2.1rem;
+            padding-bottom: 0.65rem;
+        }
+        .section {
+            padding: 4.5rem 0;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .container {
+        padding: 0 1rem;
+        max-width: 23rem;
+    }
+    .containerSection {
+        .title {
+            font-size: 1.5rem;
+            padding-bottom: 0rem;
+        }
+        .text {
+            font-size: 0.92rem;
+        }
+    }
+    .font-size-18 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        padding: 0 1rem;
+        max-width: 21rem;
+    }
+}

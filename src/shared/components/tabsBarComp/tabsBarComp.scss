@@ -1,0 +1,56 @@
+.tabsSection {
+    .MuiTab-wrapper {
+        &:hover {
+            color: var(--softRed) !important;
+        }
+    }
+    .PrivateTabIndicator-colorSecondary-3 {
+        color: var(--softRed) !important;
+    }
+    .MuiPaper-elevation1 {
+        box-shadow: none !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rect {
+        margin: 0 auto;
+        position: absolute;
+        top: 5rem;
+        left: -20rem;
+        background-color: #5266df;
+        width: 40rem;
+        height: 20rem;
+        border-bottom-right-radius: 9rem;
+    }
+}
+.mar-bottom-10 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) and (min-width: 420px) {
+    .rect {
+        width: 50rem !important;
+    }
+    .bookmarkText {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 340px) {
+    .rect {
+        top: 3.5rem !important;
+        left: -33rem !important;
+        width: 35rem !important;
+        height: 11rem !important;
+    }
+}
+@media (max-width: 340px) {
+    .rect {
+        top: 3.5rem !important;
+        left: -37rem !important;
+        width: 40rem !important;
+        height: 8rem !important;
+    }
+}

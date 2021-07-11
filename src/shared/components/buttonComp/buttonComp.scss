@@ -1,0 +1,57 @@
+.primaryBtn {
+    border: 1px solid var(--softBlue) !important;
+    background-color: var(--softBlue) !important;
+    color: var(--white) !important;
+    &:hover {
+        border: 1px solid var(--softBlue) !important;
+        background-color: var(--white) !important;
+        color: var(--softBlue) !important;
+    }
+}
+
+.dangerBtn {
+    border: 1px solid var(--softRed) !important;
+    background-color: var(--softRed) !important;
+    color: var(--white) !important;
+    &:hover {
+        border: 1px solid var(--softRed) !important;
+        background-color: var(--white) !important;
+        color: var(--softRed) !important;
+    }
+}
+
+.blackBtn {
+    border: 1px solid var(--darkText) !important;
+    background-color: var(--darkText) !important;
+    color: var(--white) !important;
+    &:hover {
+        border: 1px solid var(--darkText) !important;
+        background-color: var(--white) !important;
+        color: var(--darkText) !important;
+    }
+}
+
+.fontSize-13 {
+    font-size: 13px !important;
+}
+.mar-left-10 {
+    margin-left: 10px !important;
+}
+@media (max-width: 400px) {
+    .hide-375 {
+        display: none !important;
+    }
+}
+
+// design for hamburger login btn
+.hamburgerBtn {
+    border: 2px solid var(--white) !important;
+    background-color: transparent !important;
+    color: var(--white) !important;
+    width: 100%;
+    &:hover {
+        border: 2px solid var(--white) !important;
+        background-color: transparent !important;
+        color: var(--white) !important;
+    }
+}

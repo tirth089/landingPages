@@ -1,0 +1,92 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-wrap {
+    position: relative;
+    margin: 1.7rem 0.8rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 280px;
+    max-height: 390px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.icon {
+    width: 75px;
+    margin-bottom: 1.2rem;
+}
+
+.card .title-sm {
+    line-height: 0.8;
+    font-size: 17px;
+    word-spacing: 3px;
+}
+
+.card .text {
+    font-size: 15px;
+    margin: 0.8rem 0;
+}
+
+@media (max-width: 1280px) {
+    .card {
+        max-height: 390px;
+        max-width: 290px;
+        padding: 2.2rem 1.5rem;
+    }
+
+    .icon {
+        width: 65px;
+        margin-bottom: 0.8rem;
+    }
+
+    .card .text {
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+
+    .card:before {
+        font-size: 5rem;
+    }
+
+    .card-wrap {
+        margin: 1rem 0.6rem;
+    }
+}
+
+hr.dashedLine {
+    border-top: 1px dotted var(--grayishBlue);
+    letter-spacing: 3px;
+    margin: 1.5rem 0;
+    // left: 0rem;
+    // position: absolute;
+}
+
+.second-card {
+    padding-top: 1.8rem;
+}
+.third-card {
+    padding-top: 3.6rem;
+}
+
+
+@media (max-width: 858px) {
+    .third-card {
+        padding-top: 0rem;
+    }
+    .second-card {
+        padding-top: 0rem;
+    }
+}

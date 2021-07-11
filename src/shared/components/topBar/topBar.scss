@@ -1,0 +1,146 @@
+nav {
+	background: var(--white);
+	padding: 0 15px;
+	max-width: 70rem;
+}
+a {
+	color: var(--darkText);
+	text-decoration: none;
+	&:hover {
+		color: var(--softRed);
+	}
+}
+.menu {
+	list-style-type: none;
+	height: 6rem;
+}
+.logo {
+	padding: 7.5px 10px 7.5px 5px;
+	padding-left: 6rem;
+	img {
+		display: flex;
+		align-items: center;
+		max-width: 230px;
+	}
+	.imgheight {
+		max-width: 180px !important;
+	}
+}
+.item {
+	padding: 10px;
+}
+.item.button {
+	padding: 9px 5px;
+}
+.display-hide {
+	display: none !important;
+}
+/* Mobile menu */
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu li a {
+	display: block;
+	padding: 15px 15px;
+}
+.toggle {
+	order: 1;
+	font-size: 20px;
+}
+.item.button {
+	order: 2;
+}
+.item {
+	order: 3;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.active .item {
+	display: block;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+	.menu {
+		justify-content: center;
+	}
+	.logo {
+		flex: 1;
+	}
+	.item.button {
+		width: auto;
+		order: 1;
+		display: block;
+	}
+	.toggle {
+		flex: 1;
+		text-align: right;
+		order: 2;
+	}
+}
+/* Desktop menu */
+@media all and (min-width: 960px) {
+	.menu {
+		// align-items: flex-start;
+		flex-wrap: nowrap;
+		background: none;
+	}
+	.logo {
+		order: 0;
+	}
+	.item {
+		order: 1;
+		position: relative;
+		display: block;
+		width: auto;
+	}
+	.button {
+		order: 2;
+	}
+
+	.toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.logo {
+		padding-left: 5px;
+	}
+	.displayFlex {
+		display: flex;
+	}
+	.pad-10 {
+		padding-left: 25px !important;
+		padding-right: 25px !important;
+	}
+}
+
+.MuiDrawer-paperAnchorTop {
+	background-color: var(--darkBlue) !important;
+	opacity: 0.8 !important;
+}
+.imgwidth {
+	width: 6%;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}
+.MuiListItemText-primary {
+	color: var(--white);
+	text-align: center;
+}
+.hrline {
+	opacity: 0.4;
+}
+.loginBtn {
+	display: flex;
+    justify-content: center;
+	.hamburgerBtn {
+		margin-top: 10px;
+	}
+}

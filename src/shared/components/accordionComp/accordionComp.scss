@@ -1,0 +1,52 @@
+.accordionMain {
+    position: relative;
+    max-width: 38rem;
+    margin: 0 auto;
+    text-align: center;
+    .accordionHeading {
+        font-size: 18px;
+        flex-basis: "33.33%";
+        flex-shrink: 0;
+        color: var(--darkText);
+        &:hover {
+            color: var(--softRed);
+        }
+    }
+    .MuiPaper-elevation1 {
+        box-shadow: none;
+    }
+    .Mui-expanded {
+        .MuiSvgIcon-root {
+            color: var(--softRed) !important;
+        }
+    }
+    .MuiAccordionSummary-root {
+        .MuiSvgIcon-root {
+            color: var(--softBlue);
+        }
+    }
+    .MuiAccordion-root::before {
+        background-color: var(--white);
+    }
+    .MuiAccordion-root::after {
+        top: -1px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        content: "";
+        opacity: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+}
+
+.moreInfo {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 720px) {
+    .moreInfo {
+        margin-bottom: 3rem;
+    }
+}
